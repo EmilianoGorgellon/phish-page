@@ -1,11 +1,18 @@
+:root {
+    --red: #EF233C;
+    --green: #7BC559;
+    --backgroundColor:  #2B2D42;
+    --white: #FFFFFF;
+    --backgroundColor-ligth: #485169;
+}
 body {
-    background-color: #2B2D42;
+    background-color: var(--backgroundColor);
     /* #7289da */
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
     margin: 0;
-    color: white;
+    color: var(--white);
     font-family: sans-serif;
 }
 
@@ -14,12 +21,12 @@ body {
     width: 100%;
 }
 .header--line-true {
-    background-color: green;
+    background-color: var(--green);
     width: 50%;
     height: 10px;
 }
 .header--line-false {
-    background-color: red;
+    background-color: var(--red);
     width: 50%;
     height: 10px;
 }
@@ -46,7 +53,7 @@ body {
 }
 .title--intro-home {
     margin-top: 5%;
-    color: white;
+    color: var(--white);
     font-size: 50px;
     margin-left: 15%;
 }
@@ -60,7 +67,7 @@ body {
     padding: 10px 40px;
     font-size: 24px;
     font-weight: 700;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 6px; 
     transition: transform .4s;
     border: none;
@@ -74,7 +81,7 @@ body {
     width: 100%;
 }
 .rules-home {
-    background-color: #485169;
+    background-color: var(--backgroundColor-ligth);
     margin: 0% 5%;
     border-radius: 6px;
     min-height: 50vh;
@@ -90,7 +97,48 @@ body {
     padding: 10px 20px;
 }
 
-
 .pages {
     width: 100%;
+}
+
+.container--data-questions {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data--img {
+    width: 90%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+    .data--img {
+        width: 60%;
+    }
+}
+.container--buttons-question {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.button-phish, .button-legit {
+    padding: 12px 35px;
+    font-size: 32px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    color: var(--white);
+    outline: 0;
+}
+.button-legit {
+    background-color: var(--green);
+}
+.button-phish {
+    background-color: var(--red);
+}
+.no-show {
+    display: none;
 }
