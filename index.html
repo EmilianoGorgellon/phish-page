@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz phishing</title>
+    <!-- Font awesome links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800;900&display=swap" rel="stylesheet">
+    <!-- css stylesheet -->
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <header class="container--header-line">
@@ -18,7 +23,7 @@
                 <h1 class="title--intro-home">Phish Or Legit</h1>
                 <p class="text--intro-home">Test your skills by correctly classifying each scenario as phish or legit.</p>
                 <p class="text--intro-home">Feeling confident?</p>
-                <button class="button--link">Play</button>
+                <button class="button-default button--play">Play <i class="fas fa-play icons"></i></button>
             </div>
             <section class="container--rules-home">
                 <div class="rules-home">
@@ -39,9 +44,15 @@
         <div class="pages"></div>
         <div class="pages"></div>
         <div class="pages"></div>
+        <div class="pages"></div>
+        <div class="container--result-page">
+            <div class="result-page"></div>
+        </div>
     </main>
-    <button id="next">NEXT</button>
-    <button id="prev">PREV</button>
+    <button class="button-prev button-default no-show" id="prev"><i class="fas fa-arrow-left"></i> Back</button>
+    <!-- script font awesome -->
+    <script src="https://kit.fontawesome.com/963c0f236f.js" crossorigin="anonymous"></script>
+    <!-- scripts -->
     <script src="index.js"type="module"></script>
     <script src="data.js" ></script>
 </body>
