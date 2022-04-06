@@ -89,13 +89,17 @@ body {
     width: 100%;
 }
 .rules-home {
+    width: 80%;
     background-color: var(--backgroundColor-ligth);
-    margin: 0% 5%;
+    margin: 0% auto;
     border-radius: 6px;
     min-height: 50vh;
+    list-style: none;
+    padding-left: 0;
 }
 .title--rules-home {
     margin-top: 5%;
+    margin-bottom: 5%;
     padding-top: 5%;
     font-size: 40px;
     text-align: center;
@@ -131,7 +135,7 @@ body {
 }
 .container--buttons-question {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-evenly;
 }
 .button-phish, .button-legit {
@@ -149,6 +153,7 @@ body {
     display: flex;
     width: 55%;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -163,11 +168,9 @@ body {
 .button-next {
     color: var(--backgroundColor);
     font-size: 22px;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 .state-true, .state-false {
-    margin-right: 5%;
+    margin: 0 5% 0 0;
     font-size: 24px;
 }
 .state-true {
@@ -184,6 +187,7 @@ body {
     padding: 10px;
     background-color: var(--backgroundColor-ligth);
     border-radius: 8px;
+    padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
     .container--data-text {
@@ -191,11 +195,15 @@ body {
     }
 }
 .data--text-title {
-    margin-bottom: 0;
-    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
 }
 .data--text-content {
-    font-size: 16px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .container--result-page {
     width: 100%;
